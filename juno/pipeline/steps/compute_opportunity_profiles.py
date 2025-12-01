@@ -48,7 +48,7 @@ def _filter_to_key_outcomes(
     if data.empty:
         raise ValueError("Cannot select key outcomes from an empty DataFrame")
 
-    logger.info(
+    logger.debug(
         f"Filtering data to {len(key_outcomes)} key outcomes"
     )
 
@@ -84,7 +84,7 @@ def _filter_to_key_outcomes(
         axis=1
     )
 
-    logger.info(
+    logger.debug(
         f"Filtered dataset now contains respondent IDs, {len(key_satisfaction_variables)} satisfaction columns, "
         f"and {len(key_outcomes)} importance columns. Shape: {filtered_data.shape}"
     )
@@ -98,7 +98,7 @@ def _add_opportunity_scores(
     if filtered_data.empty:
         raise ValueError("Cannot add opportunity scores to an empty DataFrame")
 
-    logger.info("Adding opportunity scores to filtered DataFrame with shape %s", filtered_data.shape)
+    logger.debug("Adding opportunity scores to filtered DataFrame with shape %s", filtered_data.shape)
 
     data = filtered_data.copy()
 
@@ -121,7 +121,7 @@ def _add_opportunity_scores(
         )
 
     added_columns = [corresponding_opportunity(col) for col in importance_columns]
-    logger.info(
+    logger.debug(
         "Added %d opportunity score columns, resulting DataFrame shape: %s",
         len(added_columns), data.shape
     )

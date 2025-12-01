@@ -49,10 +49,10 @@ def run_pipeline(ctx: Context, steps: Iterable[Step]) -> Context:
 
     # Log all metrics at the end
     if metrics:
-        logger.info("Pipeline execution metrics:")
+        logger.debug("Pipeline execution metrics:")
         for key, value in metrics.items():
-            logger.info(f"  {key}: {value}ms")
+            logger.debug(f"  {key}: {value}ms")
         total_ms = sum(metrics.values())
-        logger.info(f"  Total execution time: {total_ms:.2f}ms")
+        logger.debug(f"  Total execution time: {total_ms:.2f}ms")
 
     return ctx

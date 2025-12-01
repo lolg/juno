@@ -66,7 +66,7 @@ def _determine_loadings(
     if n_components == 0:
         raise ValueError("The number of components must be greater than one in order to determine the loadings")
 
-    logger.info(
+    logger.debug(
         f"Starting PCA loadings computation: {n_components} components from {imp_std.shape[1]} standardized importance features (samples: {imp_std.shape[0]})"
     )
 
@@ -79,7 +79,7 @@ def _determine_loadings(
         columns=[primary_component_col(i+1) for i in range(n_components)]
     )
 
-    logger.info(
+    logger.debug(
         f"Loadings matrix computed: shape {loading_matrix.shape} "
         f"({loading_matrix.shape[0]} outcomes x {loading_matrix.shape[1]} components)"
     )

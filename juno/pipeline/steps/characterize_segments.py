@@ -82,7 +82,7 @@ def _compute_topbox_percentages(
     if not validate_threshold(top_box_threshold):
         raise ValueError("T2B threshold must be between 1 and 5")
 
-    logger.info(f"Computing segment characteristics with T2B threshold of {top_box_threshold}")
+    logger.debug(f"Computing segment characteristics with T2B threshold of {top_box_threshold}")
 
     importance_cols   = sorted([c for c in df_with_segments.columns if is_importance(c)],
                             key=lambda s: int(s.rsplit('_', 1)[-1]))
@@ -126,7 +126,7 @@ def _compute_topbox_percentages(
         [DataKey.SEGMENT_ID, DataKey.OUTCOME_ID]
     ).reset_index(drop=True)
 
-    logger.info(f"Computed segment characteristics with T2B threshold of {top_box_threshold}")
+    logger.debug(f"Computed segment characteristics with T2B threshold of {top_box_threshold}")
     
     return results, cluster_sizes
 

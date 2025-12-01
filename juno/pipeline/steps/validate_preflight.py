@@ -33,7 +33,7 @@ def validate_segments(
             raise InsufficientSampleError(msg)
         logger.warning(msg + " Proceeding, but segmentation stability may be weak.")
     else:
-        logger.info(
+        logger.debug(
             f"Sample size OK for {n_segments} segments "
             f"(have {n_respondents}, need ≥{required})."
         )
@@ -50,11 +50,11 @@ class ValidatePreflight(Step):
 
     def run(self, ctx: Context) -> Context:
 
-        logger.info("Performing preflight validation")
+        logger.debug("Performing preflight validation")
 
         n = len(ctx.responses)
         validate_segments(n, self.num_segments, self.min_per_segment, self.strict)
 
-        logger.info("Preflight validation complete")
+        logger.debug("Preflight validation complete")
 
         return ctx

@@ -46,7 +46,7 @@ def _standardize_importance(data: pd.DataFrame) -> pd.DataFrame:
 
     importance_cols = [col for col in data.columns if is_importance(col)]
 
-    logger.info(f"Standardizing {len(importance_cols)} importance columns")
+    logger.debug(f"Standardizing {len(importance_cols)} importance columns")
 
     if not importance_cols:
         raise ValueError("No importance columns found in data")
@@ -59,7 +59,7 @@ def _standardize_importance(data: pd.DataFrame) -> pd.DataFrame:
         columns=importance_cols,
         index=data.index)
 
-    logger.info(f"Standardized {len(importance_cols)} importance columns")
+    logger.debug(f"Standardized {len(importance_cols)} importance columns")
     
     return importance_data_standardized
 

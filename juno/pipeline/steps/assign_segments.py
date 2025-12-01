@@ -103,7 +103,7 @@ def _add_segments(
     if num_segments <= 0:
         raise ValueError("Number of segments must be greater than 0")
 
-    logger.info(
+    logger.debug(
         f"Starting KMeans clustering with {num_segments} segments on {len(data)} respondents. "
         f"Using {len(list_opportunity_columns(data))} opportunity columns"
     )
@@ -118,7 +118,7 @@ def _add_segments(
 
     data_with_segments[DataKey.SEGMENT_ID] = segment_labels 
 
-    logger.info(
+    logger.debug(
         f"KMeans clustering completed. Assigned segment labels to {len(data_with_segments)} respondents."
     )
     

@@ -12,8 +12,7 @@
             },
             "args": [
               "${workspaceFolder}/data/real/mdi/responses.jsonl",
-              "-o", "${workspaceFolder}/output",
-              "-v"
+              "-o", "${workspaceFolder}/output"
             ]
           }
     ]

@@ -67,7 +67,7 @@ def _select_key_outcomes(
             f"Invalid thresholds: max_cross_loading must be < minimal_primary_loading "
             f"and both in [0,1]. Got max_cross={maximum_cross_loading}, primary={minimal_primary_loading}")
 
-    logger.info(f"Selecting key outcomes using {maximum_cross_loading} minimal "
+    logger.debug(f"Selecting key outcomes using {maximum_cross_loading} minimal "
                 f"cross loading and {minimal_primary_loading} minimal primary loading")
 
     key_outcome_names = []
@@ -100,7 +100,7 @@ def _select_key_outcomes(
     seen = set()
     key_outcome_names = [k for k in key_outcome_names if not (k in seen or seen.add(k))]
 
-    logger.info(f"Selected {len(key_outcome_names)} key outcomes")
+    logger.debug(f"Selected {len(key_outcome_names)} key outcomes")
 
     return key_outcome_names
 

@@ -103,7 +103,7 @@ def _determine_components(imp_data : pd.DataFrame, method: str = "kaiser") -> in
     That's what “orthogonal” means here — independent directions of variation.
     """
 
-    logger.info(
+    logger.debug(
         f"Starting component determination using method '{method}' on {len(imp_data.columns)} standardized features."
     )
 
@@ -122,7 +122,7 @@ def _determine_components(imp_data : pd.DataFrame, method: str = "kaiser") -> in
     else:
         raise ValueError(f"Unsupported method: {method}")
 
-    logger.info(
+    logger.debug(
         f"Determined optimal number of components: {n_components} (method: '{method}')"
     )
 
