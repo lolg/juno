@@ -1,6 +1,0 @@
-[lint]
-select = ["E", "F", "I"]  # E=pycodestyle errors, F=pyflakes, I=isort (import sorting)
-
-[lint.isort]
-combine-as-imports = true
-
