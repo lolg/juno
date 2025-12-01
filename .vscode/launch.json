@@ -11,7 +11,7 @@
               "PYTHONPATH": "${workspaceFolder}"
             },
             "args": [
-              "${workspaceFolder}/juno/data/real/mdi/responses.jsonl",
+              "${workspaceFolder}/data/real/mdi/responses.jsonl",
               "-o", "${workspaceFolder}/output",
               "-v"
             ]
