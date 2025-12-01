@@ -35,7 +35,8 @@ def parse_args() -> argparse.Namespace:
         '-c', '--config',
         type=str,
         default=None,
-        help='Path to orchestration config JSON (optional, uses defaults if not provided)'
+        help='Path to orchestration config JSON (optional,'
+         'uses defaults if not provided)'
     )
     
     parser.add_argument(
