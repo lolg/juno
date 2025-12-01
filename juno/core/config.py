@@ -1,5 +1,7 @@
 """Definitions for configuration settings for the API and application."""
 
+from __future__ import annotations
+
 import json
 from typing import Literal
 
@@ -37,18 +39,18 @@ class OrchestrationConfig(BaseModel):
     scoring: dict[str, float]
     
     @classmethod
-    def from_json(cls, path: str) -> 'OrchestrationConfig':
+    def from_json(cls, path: str) -> OrchestrationConfig:
         with open(path, 'r') as f:
             data = json.load(f)
         return cls(**data)
 
     @classmethod
-    def default(cls) -> 'OrchestrationConfig':
+    def default(cls) -> OrchestrationConfig:
         return cls(
             parameters={
                 'num_segments': [2, 3, 4],
-                'max_cross_loading': [0.36, 0.40],
-                'min_primary_loading': [0.40, 0.44],
+                'max_cross_loading': [0.36, 0.40, 0.42, 0.46],
+                'min_primary_loading': [0.40, 0.44, 0.48, 0.5],
                 'random_state': [3, 6, 10, 12]
             },
             constraints=[
