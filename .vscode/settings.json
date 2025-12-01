@@ -2,12 +2,14 @@
     "files.exclude": {
       "**/__pycache__/": true,
       "**/*.pyc": true,
-      ".venv/": true
+      ".venv/": true,
+      "**/output/" : true
     },
     "search.exclude": {
       "**/__pycache__/": true,
       "**/*.pyc": true,
-      ".venv/": true
+      ".venv/": true,
+      "**/output/" : true
     },
     "cursorpyright.analysis.extraPaths": ["libs/pipeline/src"],
     "python.testing.pytestEnabled": true,

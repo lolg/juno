@@ -4,7 +4,10 @@ from pydantic import BaseModel
 
 
 class SegmentOutcome(BaseModel):
-    """Represents a single outcome for a segment, including Top-Box metrics and opportunity score."""
+    """
+    Represents a single outcome for a segment, including Top-Box metrics and
+    opportunity score.
+    """
     outcome_id: int
     sat_tb: float
     imp_tb: float
@@ -30,7 +33,10 @@ class SegmentModel(BaseModel):
 
 
 class SegmentationMetrics(BaseModel):
-    """Clustering/segmentation metrics describing the fit and properties of the solution."""
+    """
+    Clustering/segmentation metrics describing the fit and properties
+    of the solution.
+    """
     method: str  
     k: int
     random_state: int

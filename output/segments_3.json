@@ -1,0 +1,418 @@
+{
+  "segments": [
+    {
+      "segment_id": 0,
+      "size_pct": 29.8,
+      "outcomes": [
+        {
+          "outcome_id": 1,
+          "sat_tb": 73.5,
+          "imp_tb": 90.6,
+          "opportunity": 10.77
+        },
+        {
+          "outcome_id": 2,
+          "sat_tb": 71.8,
+          "imp_tb": 53.0,
+          "opportunity": 5.3
+        },
+        {
+          "outcome_id": 3,
+          "sat_tb": 69.2,
+          "imp_tb": 68.4,
+          "opportunity": 6.84
+        },
+        {
+          "outcome_id": 4,
+          "sat_tb": 53.8,
+          "imp_tb": 72.6,
+          "opportunity": 9.14
+        },
+        {
+          "outcome_id": 5,
+          "sat_tb": 34.2,
+          "imp_tb": 98.3,
+          "opportunity": 16.24
+        },
+        {
+          "outcome_id": 6,
+          "sat_tb": 80.3,
+          "imp_tb": 92.3,
+          "opportunity": 10.43
+        },
+        {
+          "outcome_id": 7,
+          "sat_tb": 68.4,
+          "imp_tb": 65.0,
+          "opportunity": 6.5
+        },
+        {
+          "outcome_id": 8,
+          "sat_tb": 67.5,
+          "imp_tb": 27.4,
+          "opportunity": 2.74
+        },
+        {
+          "outcome_id": 9,
+          "sat_tb": 34.2,
+          "imp_tb": 80.3,
+          "opportunity": 12.64
+        },
+        {
+          "outcome_id": 10,
+          "sat_tb": 56.4,
+          "imp_tb": 92.3,
+          "opportunity": 12.82
+        },
+        {
+          "outcome_id": 11,
+          "sat_tb": 70.9,
+          "imp_tb": 99.1,
+          "opportunity": 12.73
+        },
+        {
+          "outcome_id": 12,
+          "sat_tb": 68.4,
+          "imp_tb": 76.9,
+          "opportunity": 8.54
+        },
+        {
+          "outcome_id": 13,
+          "sat_tb": 65.8,
+          "imp_tb": 44.4,
+          "opportunity": 4.44
+        },
+        {
+          "outcome_id": 14,
+          "sat_tb": 47.9,
+          "imp_tb": 59.0,
+          "opportunity": 7.01
+        },
+        {
+          "outcome_id": 15,
+          "sat_tb": 76.9,
+          "imp_tb": 92.3,
+          "opportunity": 10.77
+        },
+        {
+          "outcome_id": 16,
+          "sat_tb": 28.2,
+          "imp_tb": 88.9,
+          "opportunity": 14.96
+        },
+        {
+          "outcome_id": 17,
+          "sat_tb": 78.6,
+          "imp_tb": 83.8,
+          "opportunity": 8.9
+        },
+        {
+          "outcome_id": 18,
+          "sat_tb": 77.8,
+          "imp_tb": 64.1,
+          "opportunity": 6.41
+        },
+        {
+          "outcome_id": 19,
+          "sat_tb": 39.3,
+          "imp_tb": 45.3,
+          "opportunity": 5.13
+        },
+        {
+          "outcome_id": 20,
+          "sat_tb": 64.1,
+          "imp_tb": 69.2,
+          "opportunity": 7.43
+        },
+        {
+          "outcome_id": 21,
+          "sat_tb": 68.4,
+          "imp_tb": 98.3,
+          "opportunity": 12.82
+        },
+        {
+          "outcome_id": 22,
+          "sat_tb": 76.9,
+          "imp_tb": 98.3,
+          "opportunity": 11.97
+        }
+      ]
+    },
+    {
+      "segment_id": 1,
+      "size_pct": 39.4,
+      "outcomes": [
+        {
+          "outcome_id": 1,
+          "sat_tb": 76.1,
+          "imp_tb": 77.4,
+          "opportunity": 7.87
+        },
+        {
+          "outcome_id": 2,
+          "sat_tb": 69.0,
+          "imp_tb": 38.1,
+          "opportunity": 3.81
+        },
+        {
+          "outcome_id": 3,
+          "sat_tb": 68.4,
+          "imp_tb": 41.3,
+          "opportunity": 4.13
+        },
+        {
+          "outcome_id": 4,
+          "sat_tb": 61.3,
+          "imp_tb": 27.7,
+          "opportunity": 2.77
+        },
+        {
+          "outcome_id": 5,
+          "sat_tb": 50.3,
+          "imp_tb": 20.6,
+          "opportunity": 2.06
+        },
+        {
+          "outcome_id": 6,
+          "sat_tb": 81.3,
+          "imp_tb": 78.7,
+          "opportunity": 7.87
+        },
+        {
+          "outcome_id": 7,
+          "sat_tb": 67.7,
+          "imp_tb": 43.9,
+          "opportunity": 4.39
+        },
+        {
+          "outcome_id": 8,
+          "sat_tb": 54.8,
+          "imp_tb": 20.6,
+          "opportunity": 2.06
+        },
+        {
+          "outcome_id": 9,
+          "sat_tb": 47.1,
+          "imp_tb": 60.0,
+          "opportunity": 7.29
+        },
+        {
+          "outcome_id": 10,
+          "sat_tb": 59.4,
+          "imp_tb": 83.2,
+          "opportunity": 10.7
+        },
+        {
+          "outcome_id": 11,
+          "sat_tb": 76.1,
+          "imp_tb": 90.3,
+          "opportunity": 10.45
+        },
+        {
+          "outcome_id": 12,
+          "sat_tb": 65.8,
+          "imp_tb": 53.5,
+          "opportunity": 5.35
+        },
+        {
+          "outcome_id": 13,
+          "sat_tb": 63.2,
+          "imp_tb": 34.8,
+          "opportunity": 3.48
+        },
+        {
+          "outcome_id": 14,
+          "sat_tb": 43.2,
+          "imp_tb": 47.1,
+          "opportunity": 5.1
+        },
+        {
+          "outcome_id": 15,
+          "sat_tb": 77.4,
+          "imp_tb": 89.0,
+          "opportunity": 10.06
+        },
+        {
+          "outcome_id": 16,
+          "sat_tb": 38.7,
+          "imp_tb": 27.7,
+          "opportunity": 2.77
+        },
+        {
+          "outcome_id": 17,
+          "sat_tb": 64.5,
+          "imp_tb": 41.3,
+          "opportunity": 4.13
+        },
+        {
+          "outcome_id": 18,
+          "sat_tb": 62.6,
+          "imp_tb": 40.0,
+          "opportunity": 4.0
+        },
+        {
+          "outcome_id": 19,
+          "sat_tb": 44.5,
+          "imp_tb": 29.7,
+          "opportunity": 2.97
+        },
+        {
+          "outcome_id": 20,
+          "sat_tb": 62.6,
+          "imp_tb": 42.6,
+          "opportunity": 4.26
+        },
+        {
+          "outcome_id": 21,
+          "sat_tb": 69.0,
+          "imp_tb": 81.9,
+          "opportunity": 9.48
+        },
+        {
+          "outcome_id": 22,
+          "sat_tb": 70.3,
+          "imp_tb": 87.1,
+          "opportunity": 10.39
+        }
+      ]
+    },
+    {
+      "segment_id": 2,
+      "size_pct": 30.8,
+      "outcomes": [
+        {
+          "outcome_id": 1,
+          "sat_tb": 71.9,
+          "imp_tb": 80.2,
+          "opportunity": 8.85
+        },
+        {
+          "outcome_id": 2,
+          "sat_tb": 71.1,
+          "imp_tb": 23.1,
+          "opportunity": 2.31
+        },
+        {
+          "outcome_id": 3,
+          "sat_tb": 71.1,
+          "imp_tb": 39.7,
+          "opportunity": 3.97
+        },
+        {
+          "outcome_id": 4,
+          "sat_tb": 63.6,
+          "imp_tb": 14.0,
+          "opportunity": 1.4
+        },
+        {
+          "outcome_id": 5,
+          "sat_tb": 18.2,
+          "imp_tb": 99.2,
+          "opportunity": 18.02
+        },
+        {
+          "outcome_id": 6,
+          "sat_tb": 81.8,
+          "imp_tb": 82.6,
+          "opportunity": 8.34
+        },
+        {
+          "outcome_id": 7,
+          "sat_tb": 64.5,
+          "imp_tb": 22.3,
+          "opportunity": 2.23
+        },
+        {
+          "outcome_id": 8,
+          "sat_tb": 71.1,
+          "imp_tb": 14.0,
+          "opportunity": 1.4
+        },
+        {
+          "outcome_id": 9,
+          "sat_tb": 33.1,
+          "imp_tb": 62.8,
+          "opportunity": 9.25
+        },
+        {
+          "outcome_id": 10,
+          "sat_tb": 57.9,
+          "imp_tb": 81.0,
+          "opportunity": 10.41
+        },
+        {
+          "outcome_id": 11,
+          "sat_tb": 72.7,
+          "imp_tb": 85.1,
+          "opportunity": 9.75
+        },
+        {
+          "outcome_id": 12,
+          "sat_tb": 59.5,
+          "imp_tb": 51.2,
+          "opportunity": 5.12
+        },
+        {
+          "outcome_id": 13,
+          "sat_tb": 62.0,
+          "imp_tb": 29.8,
+          "opportunity": 2.98
+        },
+        {
+          "outcome_id": 14,
+          "sat_tb": 38.8,
+          "imp_tb": 30.6,
+          "opportunity": 3.06
+        },
+        {
+          "outcome_id": 15,
+          "sat_tb": 73.6,
+          "imp_tb": 86.8,
+          "opportunity": 10.0
+        },
+        {
+          "outcome_id": 16,
+          "sat_tb": 15.7,
+          "imp_tb": 92.6,
+          "opportunity": 16.95
+        },
+        {
+          "outcome_id": 17,
+          "sat_tb": 73.6,
+          "imp_tb": 79.3,
+          "opportunity": 8.5
+        },
+        {
+          "outcome_id": 18,
+          "sat_tb": 71.9,
+          "imp_tb": 41.3,
+          "opportunity": 4.13
+        },
+        {
+          "outcome_id": 19,
+          "sat_tb": 27.3,
+          "imp_tb": 20.7,
+          "opportunity": 2.07
+        },
+        {
+          "outcome_id": 20,
+          "sat_tb": 63.6,
+          "imp_tb": 27.3,
+          "opportunity": 2.73
+        },
+        {
+          "outcome_id": 21,
+          "sat_tb": 86.0,
+          "imp_tb": 80.2,
+          "opportunity": 8.02
+        },
+        {
+          "outcome_id": 22,
+          "sat_tb": 76.9,
+          "imp_tb": 88.4,
+          "opportunity": 9.99
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,7 @@
-"""Tools and logic for running segmentation analysis pipelines on survey respondent data."""
+"""
+Tools and logic for running segmentation analysis pipelines on
+survey respondent data.
+"""
 
 import numpy as np
 import pandas as pd
@@ -94,12 +97,14 @@ class SegmentBuilder:
         
         if len(sat_cols) != len(imp_cols):
             raise ValueError(
-                f"Mismatch: {len(sat_cols)} satisfaction vs {len(imp_cols)} importance columns"
+                f"Mismatch: {len(sat_cols)} satisfaction vs "
+                f"{len(imp_cols)} importance columns"
             )
         
         if len(df) < self.num_segments:
             raise ValueError(
-                f"Need at least {self.num_segments} respondents for {self.num_segments} segments, "
+                f"Need at least {self.num_segments} respondents for "
+                f"{self.num_segments} segments, "
                 f"got {len(df)}"
             )
 
@@ -151,7 +156,9 @@ class SegmentBuilder:
             Prefix.OPPORTUNITY_PREFIX)]
 
         if not feat_cols:
-            raise ValueError("No Opportunity_* columns found to compute segmentation metrics.")
+            raise ValueError(
+                "No Opportunity_* columns found to compute segmentation metrics.")
+
         X = with_opp_seg[feat_cols].to_numpy()
         y = with_opp_seg[DataKey.SEGMENT_ID].to_numpy()
         n = len(y)

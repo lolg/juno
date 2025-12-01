@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run CLI App",
+            "type": "python",
+            "request": "launch",
+            "module": "cli.main",
+            "console": "integratedTerminal",
+            "env": {
+              "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+              "${workspaceFolder}/juno/data/real/mdi/responses.jsonl",
+              "-o", "${workspaceFolder}/output",
+              "-v"
+            ]
+          }
+    ]
+  }
