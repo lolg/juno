@@ -7,16 +7,26 @@ Open-source ODI (Outcome-Driven Innovation) segmentation tool for product teams.
 Juno takes survey responses (importance + satisfaction ratings on outcomes) and:
 
 1. Runs PCA to identify key differentiating outcomes
-2. Clusters respondents into segments using k-means
-3. Calculates opportunity scores per segment (Importance + max(Importance - Satisfaction, 0))
-4. Outputs the best segment solution for each segment count (2, 3, 4, etc.)
+2. Clusters respondents into segments
+3. Calculates satisfaction, importance and opportunity scores for each outcome for each segment (Importance + max(Importance - Satisfaction, 0))
+4. Runs multiple configurations to determine the best segment solution
+5. Outputs the best segment solution for each segment count (2, 3, 4, etc.) based on silhouette score
+
+## Why use it
+
+- Discover outcome-based segments with different unmet needs
+- Build opportunity landscapes showing underserved, overserved, table stakes, and appropriate outcomes
+- Determine optimal strategy type for each segment (Differentiated, Disruptive, Dominant, etc.)
+- Prioritize the biggest opportunities in the largest segments
+- Match products to segments where they'll win
+- Make evidence-based strategy decisions, not assumptions
 
 ## Installation
 ```bash
 git clone https://github.com/YOUR_USERNAME/juno.git
 cd juno
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -25,12 +35,12 @@ pip install -r requirements.txt
 python -m cli.main responses.jsonl -o ./output
 ```
 
-Options:
+**Options:**
 - `-c, --config` — Path to orchestration config JSON (optional)
 - `-o, --output` — Output directory (default: ./output)
 - `-v, --verbose` — Enable verbose logging
 
-## Input format
+## Input Format
 
 `responses.jsonl` — One JSON object per line:
 ```jsonl
@@ -39,12 +49,14 @@ Options:
 {"respondentId": 2, "outcomeId": 1, "importance": 3, "satisfaction": 4}
 ```
 
+**Fields:**
 - `respondentId`: Integer identifier for respondent
 - `outcomeId`: Integer identifier for outcome
 - `importance`: Rating 1-5
 - `satisfaction`: Rating 1-5
 
-Minimum: ~30 respondents, 5+ outcomes. Recommended: 60 respondents per expected segment.
+**Minimum:** ~30 respondents, 5+ outcomes  
+**Recommended:** 60+ respondents per expected segment
 
 ## Output
 ```
@@ -55,7 +67,7 @@ output/
 └── segments_4.json   # Best 4-segment model
 ```
 
-`summary.json`:
+**Example `summary.json`:**
 ```json
 {
   "generated_at": "2025-01-27T14:30:00Z",
@@ -70,6 +82,38 @@ output/
     }
   ],
   "recommended": 3
+}
+```
+
+**Example `segments_2.json`:**
+```json
+{
+  "segments": [
+    {
+      "segment_id": 0,
+      "size_pct": 58.5,
+      "outcomes": [
+        {
+          "outcome_id": 1,
+          "sat_tb": 72.2,
+          "imp_tb": 85.7,
+          "opportunity": 9.92
+        }
+      ]
+    },
+    {
+      "segment_id": 1,
+      "size_pct": 41.5,
+      "outcomes": [
+        {
+          "outcome_id": 1,
+          "sat_tb": 76.7,
+          "imp_tb": 77.3,
+          "opportunity": 7.79
+        }
+      ]
+    }
+  ]
 }
 ```
 
