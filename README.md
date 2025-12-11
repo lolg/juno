@@ -33,7 +33,7 @@ pip install -e .
 
 ## Usage
 ```bash
-python -m cli.main responses.jsonl -o ./output
+juno responses.jsonl -o ./output
 ```
 
 **Options:**
@@ -139,10 +139,11 @@ Default parameters work for most cases. To customize, create a config JSON:
 }
 ```
 
-Then run with:
+## Run with example data
 ```bash
-python -m cli.main responses.jsonl -c config.json -o ./output
+juno data/real/mdi/responses.jsonl
 ```
+
 
 ## Background
 
