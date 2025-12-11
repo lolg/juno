@@ -23,7 +23,7 @@ Juno takes survey responses (importance + satisfaction ratings on outcomes) and:
 
 ## Installation
 ```bash
-git clone https://github.com/YOUR_USERNAME/juno.git
+git clone https://github.com/lolg/juno.git
 cd juno
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
