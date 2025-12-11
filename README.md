@@ -144,6 +144,8 @@ Default parameters work for most cases. To customize, create a config JSON:
 juno data/real/mdi/responses.jsonl
 ```
 
+See data/real/mdi/README.md for more information about this dataset. 
+
 
 ## Background
 
